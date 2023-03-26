@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="blulight_octModelStoreContainer" CdmEntityContainer="bd_blulightEntities">
+    <EntitySetMapping Name="Categoria_producto">
+      <EntityTypeMapping TypeName="blulight_octModel.Categoria_producto">
+        <MappingFragment StoreEntitySet="Categoria_producto">
+          <ScalarProperty Name="idCategoriaProd" ColumnName="idCategoriaProd" />
+          <ScalarProperty Name="categoria" ColumnName="categoria" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categoria_servicio">
+      <EntityTypeMapping TypeName="blulight_octModel.Categoria_servicio">
+        <MappingFragment StoreEntitySet="Categoria_servicio">
+          <ScalarProperty Name="idCategoriaServ" ColumnName="idCategoriaServ" />
+          <ScalarProperty Name="categoria" ColumnName="categoria" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Color_producto">
+      <EntityTypeMapping TypeName="blulight_octModel.Color_producto">
+        <MappingFragment StoreEntitySet="Color_producto">
+          <ScalarProperty Name="idColor" ColumnName="idColor" />
+          <ScalarProperty Name="color" ColumnName="color" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Detalle_factura_producto">
+      <EntityTypeMapping TypeName="blulight_octModel.Detalle_factura_producto">
+        <MappingFragment StoreEntitySet="Detalle_factura_producto">
+          <ScalarProperty Name="idFacturaProd" ColumnName="idFacturaProd" />
+          <ScalarProperty Name="idProducto" ColumnName="idProducto" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Detalle_factura_servicio">
+      <EntityTypeMapping TypeName="blulight_octModel.Detalle_factura_servicio">
+        <MappingFragment StoreEntitySet="Detalle_factura_servicio">
+          <ScalarProperty Name="idServicio" ColumnName="idServicio" />
+          <ScalarProperty Name="idEstado" ColumnName="idEstado" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+          <ScalarProperty Name="idLab" ColumnName="idLab" />
+          <ScalarProperty Name="idFacturaServ" ColumnName="idFacturaServ" />
+          <ScalarProperty Name="idEmpleado" ColumnName="idEmpleado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Empleado">
+      <EntityTypeMapping TypeName="blulight_octModel.Empleado">
+        <MappingFragment StoreEntitySet="Empleado">
+          <ScalarProperty Name="idEmpleado" ColumnName="idEmpleado" />
+          <ScalarProperty Name="maxTitulo" ColumnName="maxTitulo" />
+          <ScalarProperty Name="idLab" ColumnName="idLab" />
+          <ScalarProperty Name="idPersona" ColumnName="idPersona" />
+          <ScalarProperty Name="activo" ColumnName="activo" />
+          <ScalarProperty Name="idTipoEmpleado" ColumnName="idTipoEmpleado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Estado_solicitud_servicio">
+      <EntityTypeMapping TypeName="blulight_octModel.Estado_solicitud_servicio">
+        <MappingFragment StoreEntitySet="Estado_solicitud_servicio">
+          <ScalarProperty Name="idEstado" ColumnName="idEstado" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Factura_producto">
+      <EntityTypeMapping TypeName="blulight_octModel.Factura_producto">
+        <MappingFragment StoreEntitySet="Factura_producto">
+          <ScalarProperty Name="idFacturaProd" ColumnName="idFacturaProd" />
+          <ScalarProperty Name="idMetodoPago" ColumnName="idMetodoPago" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="hora" ColumnName="hora" />
+          <ScalarProperty Name="idPersona" ColumnName="idPersona" />
+          <ScalarProperty Name="activo" ColumnName="activo" />
+          <ScalarProperty Name="idEmpleado" ColumnName="idEmpleado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Factura_servicio">
+      <EntityTypeMapping TypeName="blulight_octModel.Factura_servicio">
+        <MappingFragment StoreEntitySet="Factura_servicio">
+          <ScalarProperty Name="idFacturaServ" ColumnName="idFacturaServ" />
+          <ScalarProperty Name="idMetodoPago" ColumnName="idMetodoPago" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="hora" ColumnName="hora" />
+          <ScalarProperty Name="idPersona" ColumnName="idPersona" />
+          <ScalarProperty Name="institucion" ColumnName="institucion" />
+          <ScalarProperty Name="activo" ColumnName="activo" />
+          <ScalarProperty Name="idEmpleado" ColumnName="idEmpleado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Inscripto_jornada">
+      <EntityTypeMapping TypeName="blulight_octModel.Inscripto_jornada">
+        <MappingFragment StoreEntitySet="Inscripto_jornada">
+          <ScalarProperty Name="idJornada" ColumnName="idJornada" />
+          <ScalarProperty Name="idPersona" ColumnName="idPersona" />
+          <ScalarProperty Name="fechaInscripcion" ColumnName="fechaInscripcion" />
+          <ScalarProperty Name="horaInscripcion" ColumnName="horaInscripcion" />
+          <ScalarProperty Name="activo" ColumnName="activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Jefe_laboratorio">
+      <EntityTypeMapping TypeName="blulight_octModel.Jefe_laboratorio">
+        <MappingFragment StoreEntitySet="Jefe_laboratorio">
+          <ScalarProperty Name="idJefeLab" ColumnName="idJefeLab" />
+          <ScalarProperty Name="idEmpleado" ColumnName="idEmpleado" />
+          <ScalarProperty Name="activo" ColumnName="activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Jornada">
+      <EntityTypeMapping TypeName="blulight_octModel.Jornada">
+        <MappingFragment StoreEntitySet="Jornada">
+          <ScalarProperty Name="idJornada" ColumnName="idJornada" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="cupo" ColumnName="cupo" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="hora" ColumnName="hora" />
+          <ScalarProperty Name="idJefeLab" ColumnName="idJefeLab" />
+          <ScalarProperty Name="idAuditorio" ColumnName="idAuditorio" />
+          <ScalarProperty Name="activo" ColumnName="activo" />
+          <ScalarProperty Name="inscriptos" ColumnName="inscriptos" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Laboratorio">
+      <EntityTypeMapping TypeName="blulight_octModel.Laboratorio">
+        <MappingFragment StoreEntitySet="Laboratorio">
+          <ScalarProperty Name="idLab" ColumnName="idLab" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="activo" ColumnName="activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Metodo_de_pago">
+      <EntityTypeMapping TypeName="blulight_octModel.Metodo_de_pago">
+        <MappingFragment StoreEntitySet="Metodo_de_pago">
+          <ScalarProperty Name="idMetodoPago" ColumnName="idMetodoPago" />
+          <ScalarProperty Name="metodo" ColumnName="metodo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Perfil_de_usuario">
+      <EntityTypeMapping TypeName="blulight_octModel.Perfil_de_usuario">
+        <MappingFragment StoreEntitySet="Perfil_de_usuario">
+          <ScalarProperty Name="idPerfil" ColumnName="idPerfil" />
+          <ScalarProperty Name="perfil" ColumnName="perfil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Persona">
+      <EntityTypeMapping TypeName="blulight_octModel.Persona">
+        <MappingFragment StoreEntitySet="Persona">
+          <ScalarProperty Name="idPersona" ColumnName="idPersona" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellido" ColumnName="apellido" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="dni" ColumnName="dni" />
+          <ScalarProperty Name="activo" ColumnName="activo" />
+          <ScalarProperty Name="direccion" ColumnName="direccion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Producto">
+      <EntityTypeMapping TypeName="blulight_octModel.Producto">
+        <MappingFragment StoreEntitySet="Producto">
+          <ScalarProperty Name="idProducto" ColumnName="idProducto" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="stock" ColumnName="stock" />
+          <ScalarProperty Name="idCategoriaProd" ColumnName="idCategoriaProd" />
+          <ScalarProperty Name="idColor" ColumnName="idColor" />
+          <ScalarProperty Name="activo" ColumnName="activo" />
+          <ScalarProperty Name="imagen" ColumnName="imagen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Salon_auditorio">
+      <EntityTypeMapping TypeName="blulight_octModel.Salon_auditorio">
+        <MappingFragment StoreEntitySet="Salon_auditorio">
+          <ScalarProperty Name="idAuditorio" ColumnName="idAuditorio" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Servicio">
+      <EntityTypeMapping TypeName="blulight_octModel.Servicio">
+        <MappingFragment StoreEntitySet="Servicio">
+          <ScalarProperty Name="idServicio" ColumnName="idServicio" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="idCategoriaServ" ColumnName="idCategoriaServ" />
+          <ScalarProperty Name="activo" ColumnName="activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Servicio_laboratorio">
+      <EntityTypeMapping TypeName="blulight_octModel.Servicio_laboratorio">
+        <MappingFragment StoreEntitySet="Servicio-laboratorio">
+          <ScalarProperty Name="idServicio" ColumnName="idServicio" />
+          <ScalarProperty Name="idLab" ColumnName="idLab" />
+          <ScalarProperty Name="activo" ColumnName="activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tipo_empleado">
+      <EntityTypeMapping TypeName="blulight_octModel.Tipo_empleado">
+        <MappingFragment StoreEntitySet="Tipo_empleado">
+          <ScalarProperty Name="idTipoEmpleado" ColumnName="idTipoEmpleado" />
+          <ScalarProperty Name="tipo" ColumnName="tipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuario">
+      <EntityTypeMapping TypeName="blulight_octModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+          <ScalarProperty Name="usuario1" ColumnName="usuario" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="idPerfil" ColumnName="idPerfil" />
+          <ScalarProperty Name="idEmpleado" ColumnName="idEmpleado" />
+          <ScalarProperty Name="activo" ColumnName="activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

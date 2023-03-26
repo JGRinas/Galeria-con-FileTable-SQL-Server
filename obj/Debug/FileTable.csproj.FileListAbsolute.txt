@@ -1,0 +1,140 @@
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\obj\Debug\FileTable.csproj.AssemblyReference.cache
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\obj\Debug\FileTable.csproj.SuggestedBindingRedirects.cache
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\obj\Debug\CapaPresentacion.FormFileTable.resources
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\obj\Debug\FileTable.csproj.GenerateResource.cache
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\Bunifu.Dataviz.WinForms.xml
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\Bunifu.UI.WinForms.xml
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\EntityFramework.xml
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\itextsharp.xml
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\linq2db.xml
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\Microsoft.Win32.Registry.AccessControl.xml
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\Microsoft.Win32.SystemEvents.xml
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\Newtonsoft.Json.xml
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\RestSharp.xml
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Buffers.xml
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\System.CodeDom.xml
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Data.Odbc.xml
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Data.OleDb.xml
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Data.SqlClient.xml
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Diagnostics.EventLog.xml
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Diagnostics.PerformanceCounter.xml
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Drawing.Common.xml
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\System.IO.FileSystem.AccessControl.xml
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\System.IO.Packaging.xml
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\System.IO.Ports.xml
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Memory.xml
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Security.AccessControl.xml
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Security.Cryptography.Cng.xml
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Security.Cryptography.Pkcs.xml
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Security.Cryptography.ProtectedData.xml
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Security.Cryptography.Xml.xml
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Security.Permissions.xml
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\System.ServiceModel.Syndication.xml
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\System.ServiceProcess.ServiceController.xml
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Text.Encoding.CodePages.xml
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Threading.AccessControl.xml
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\obj\Debug\CapaPresentacion.exe.licenses
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\obj\Debug\FileTable.csproj.CoreCompileInputs.cache
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\obj\Debug\FileTable.csproj.Fody.CopyLocal.cache
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\obj\Debug\FileTable.csproj.CopyComplete
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\obj\Debug\CapaPresentacion.exe.config
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\obj\Debug\CapaPresentacion.FormVerTodo.resources
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\obj\Debug\CapaPresentacion.FormVerImagenes.resources
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\Interop.WMPLib.dll
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\obj\Debug\Interop.WMPLib.dll
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\obj\Debug\FileTable.csproj.ResolveComReference.cache
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\obj\Debug\CapaPresentacion.FormVerVideos.resources
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\obj\Debug\CapaPresentacion.FormVerAudios.resources
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\obj\Debug\CapaPresentacion.FormOtrosArchivos.resources
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\CapaPresentacion.exe.manifest
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\bin\Debug\CapaPresentacion.application
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\obj\Debug\CapaPresentacion.exe.manifest
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\obj\Debug\CapaPresentacion.application
+C:\Users\juanx\Desktop\FileTable\FileTable\CapaPresentacion\obj\Debug\CapaPresentacion.FormBackup.resources
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\CapaPresentacion.exe.manifest
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\CapaPresentacion.application
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\Bunifu.Dataviz.WinForms.xml
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\Bunifu.UI.WinForms.xml
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\EntityFramework.xml
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\EntityFramework.SqlServer.xml
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\itextsharp.xml
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\linq2db.xml
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\Microsoft.Win32.Registry.xml
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\Microsoft.Win32.Registry.AccessControl.xml
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\Microsoft.Win32.SystemEvents.xml
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\Newtonsoft.Json.xml
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\RestSharp.xml
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Buffers.xml
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\System.CodeDom.xml
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Configuration.ConfigurationManager.xml
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Data.Odbc.xml
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Data.OleDb.xml
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Data.SqlClient.xml
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Diagnostics.EventLog.xml
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Diagnostics.PerformanceCounter.xml
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Drawing.Common.xml
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\System.IO.FileSystem.AccessControl.xml
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\System.IO.Packaging.xml
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\System.IO.Ports.xml
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Memory.xml
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Numerics.Vectors.xml
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Security.AccessControl.xml
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Security.Cryptography.Cng.xml
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Security.Cryptography.Pkcs.xml
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Security.Cryptography.ProtectedData.xml
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Security.Cryptography.Xml.xml
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Security.Permissions.xml
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Security.Principal.Windows.xml
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\System.ServiceModel.Syndication.xml
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\System.ServiceProcess.ServiceController.xml
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Text.Encoding.CodePages.xml
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Threading.AccessControl.xml
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\Interop.WMPLib.dll
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\bin\Debug\AxInterop.WMPLib.dll
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\obj\Debug\FileTable.csproj.AssemblyReference.cache
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\obj\Debug\FileTable.csproj.SuggestedBindingRedirects.cache
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\obj\Debug\CapaPresentacion.exe.config
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\obj\Debug\Interop.WMPLib.dll
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\obj\Debug\AxInterop.WMPLib.dll
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\obj\Debug\FileTable.csproj.ResolveComReference.cache
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\obj\Debug\CapaPresentacion.FormBackup.resources
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\obj\Debug\CapaPresentacion.FormFileTable.resources
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\obj\Debug\CapaPresentacion.FormOtrosArchivos.resources
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\obj\Debug\CapaPresentacion.FormVerAudios.resources
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\obj\Debug\CapaPresentacion.FormVerImagenes.resources
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\obj\Debug\CapaPresentacion.FormVerTodo.resources
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\obj\Debug\CapaPresentacion.FormVerVideos.resources
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\obj\Debug\FileTable.csproj.GenerateResource.cache
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\obj\Debug\CapaPresentacion.exe.licenses
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\obj\Debug\FileTable.csproj.CoreCompileInputs.cache
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\obj\Debug\FileTable.csproj.Fody.CopyLocal.cache
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\obj\Debug\CapaPresentacion.exe.manifest
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\obj\Debug\CapaPresentacion.application
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\obj\Debug\FileTable.csproj.CopyComplete
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+D:\cosas mias\Estudios\Facultad\3-tercer año\4 Base de datos 1\FileTable\FileTable\CapaPresentacion\obj\Debug\CapaPresentacion.pdb

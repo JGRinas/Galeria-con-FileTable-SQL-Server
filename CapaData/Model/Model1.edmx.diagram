@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a9541298ecd54ef38abeb9005324fcf6" Name="Diagram1">
+        <EntityTypeShape EntityType="bd_geneticaModel.Autor" Width="1.5" PointX="0.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_geneticaModel.Clase" Width="1.5" PointX="1.5" PointY="33.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_geneticaModel.Conformacion" Width="1.5" PointX="0.75" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_geneticaModel.Dominio" Width="1.5" PointX="1.5" PointY="43.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_geneticaModel.Especie" Width="1.5" PointX="0.75" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_geneticaModel.Familia" Width="1.5" PointX="1.5" PointY="25" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_geneticaModel.Filo" Width="1.5" PointX="1.5" PointY="37.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_geneticaModel.Gen" Width="1.5" PointX="0.75" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_geneticaModel.Genero" Width="1.5" PointX="1.5" PointY="21" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_geneticaModel.MetodoDeSecuenciacion" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_geneticaModel.Orden" Width="1.5" PointX="1.5" PointY="29.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_geneticaModel.Organela" Width="1.5" PointX="0.75" PointY="46.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_geneticaModel.Pais" Width="1.5" PointX="1.5" PointY="55.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_geneticaModel.Publicacion" Width="1.5" PointX="0.75" PointY="48.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_geneticaModel.Reino" Width="1.5" PointX="1.5" PointY="40.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_geneticaModel.Revista_Cientifica" Width="1.5" PointX="1.5" PointY="52.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_geneticaModel.SecuenciaDeNucleotidos" Width="1.5" PointX="3" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_geneticaModel.Titulo" Width="1.5" PointX="1.5" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_geneticaModel.VincularArchivos" Width="1.5" PointX="5.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_geneticaModel.Publicacion_Archivo" Width="1.5" PointX="3" PointY="49" IsExpanded="true" />
+        <EntityTypeShape EntityType="bd_geneticaModel.VistaPublicacionArchivos_FT" Width="1.5" PointX="5.75" PointY="5.375" IsExpanded="true" />
+        <AssociationConnector Association="bd_geneticaModel.Fk_Autor_Titulo" ManuallyRouted="false" />
+        <AssociationConnector Association="bd_geneticaModel.FK_Clase_Filo" ManuallyRouted="false" />
+        <AssociationConnector Association="bd_geneticaModel.FK_Orden_Clase" ManuallyRouted="false" />
+        <AssociationConnector Association="bd_geneticaModel.fk_SecuenciaNucl_Conformacion" ManuallyRouted="false" />
+        <AssociationConnector Association="bd_geneticaModel.FK_Reino_Dominio" ManuallyRouted="false" />
+        <AssociationConnector Association="bd_geneticaModel.FK_Especie_Genero" ManuallyRouted="false" />
+        <AssociationConnector Association="bd_geneticaModel.fk_SecuenciaNucl_Especie" ManuallyRouted="false" />
+        <AssociationConnector Association="bd_geneticaModel.FK_Familia_Orden" ManuallyRouted="false" />
+        <AssociationConnector Association="bd_geneticaModel.FK_Genero_FamiliaFOREIGN" ManuallyRouted="false" />
+        <AssociationConnector Association="bd_geneticaModel.FK_Filo_Reino" ManuallyRouted="false" />
+        <AssociationConnector Association="bd_geneticaModel.fk_SecuenciaNucl_MetodoSec" ManuallyRouted="false" />
+        <AssociationConnector Association="bd_geneticaModel.fk_SecuenciaNucl_Organela" ManuallyRouted="false" />
+        <AssociationConnector Association="bd_geneticaModel.FK_Revista_Pais" ManuallyRouted="false" />
+        <AssociationConnector Association="bd_geneticaModel.FK_publicacion_ft" ManuallyRouted="false" />
+        <AssociationConnector Association="bd_geneticaModel.FK_Publicacion_Revista" ManuallyRouted="false" />
+        <AssociationConnector Association="bd_geneticaModel.Autor_Publicacion" ManuallyRouted="false" />
+        <AssociationConnector Association="bd_geneticaModel.Secuencia_Autor" ManuallyRouted="false" />
+        <AssociationConnector Association="bd_geneticaModel.Secuencia_Gen" ManuallyRouted="false" />
+        <AssociationConnector Association="bd_geneticaModel.Secuencia_Gen_Potencial" ManuallyRouted="false" />
+        <AssociationConnector Association="bd_geneticaModel.Secuencia_Publicacion" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,839 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="bd_geneticaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Autor">
+    <Key>
+      <PropertyRef Name="idAutor" />
+    </Key>
+    <Property Name="idAutor" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="apellido" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="dni" Type="int" Nullable="false" />
+    <Property Name="descrEspecialidad" Type="varchar" MaxLength="200" />
+    <Property Name="idMaxTitulo" Type="int" />
+  </EntityType>
+  <EntityType Name="Autor_Publicacion">
+    <Key>
+      <PropertyRef Name="idAutor" />
+      <PropertyRef Name="idPublicacion" />
+    </Key>
+    <Property Name="idAutor" Type="int" Nullable="false" />
+    <Property Name="idPublicacion" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Clase">
+    <Key>
+      <PropertyRef Name="idClase" />
+      <PropertyRef Name="idFilo" />
+      <PropertyRef Name="idReino" />
+      <PropertyRef Name="idDominio" />
+    </Key>
+    <Property Name="idClase" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idFilo" Type="int" Nullable="false" />
+    <Property Name="idReino" Type="int" Nullable="false" />
+    <Property Name="idDominio" Type="int" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Conformacion">
+    <Key>
+      <PropertyRef Name="idConformacion" />
+    </Key>
+    <Property Name="idConformacion" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Dominio">
+    <Key>
+      <PropertyRef Name="idDominio" />
+    </Key>
+    <Property Name="idDominio" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Especie">
+    <Key>
+      <PropertyRef Name="idEspecie" />
+      <PropertyRef Name="idGenero" />
+      <PropertyRef Name="idFamilia" />
+      <PropertyRef Name="idOrden" />
+      <PropertyRef Name="idClase" />
+      <PropertyRef Name="idFilo" />
+      <PropertyRef Name="idReino" />
+      <PropertyRef Name="idDominio" />
+    </Key>
+    <Property Name="idEspecie" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idGenero" Type="int" Nullable="false" />
+    <Property Name="idFamilia" Type="int" Nullable="false" />
+    <Property Name="idOrden" Type="int" Nullable="false" />
+    <Property Name="idClase" Type="int" Nullable="false" />
+    <Property Name="idFilo" Type="int" Nullable="false" />
+    <Property Name="idReino" Type="int" Nullable="false" />
+    <Property Name="idDominio" Type="int" Nullable="false" />
+    <Property Name="epitetoEspecifico" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Familia">
+    <Key>
+      <PropertyRef Name="idFamilia" />
+      <PropertyRef Name="idOrden" />
+      <PropertyRef Name="idClase" />
+      <PropertyRef Name="idFilo" />
+      <PropertyRef Name="idReino" />
+      <PropertyRef Name="idDominio" />
+    </Key>
+    <Property Name="idFamilia" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idOrden" Type="int" Nullable="false" />
+    <Property Name="idClase" Type="int" Nullable="false" />
+    <Property Name="idFilo" Type="int" Nullable="false" />
+    <Property Name="idReino" Type="int" Nullable="false" />
+    <Property Name="idDominio" Type="int" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Filo">
+    <Key>
+      <PropertyRef Name="idFilo" />
+      <PropertyRef Name="idReino" />
+      <PropertyRef Name="idDominio" />
+    </Key>
+    <Property Name="idFilo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idReino" Type="int" Nullable="false" />
+    <Property Name="idDominio" Type="int" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Gen">
+    <Key>
+      <PropertyRef Name="idGen" />
+    </Key>
+    <Property Name="idGen" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="70" Nullable="false" />
+    <Property Name="secuencia" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Genero">
+    <Key>
+      <PropertyRef Name="idGenero" />
+      <PropertyRef Name="idFamilia" />
+      <PropertyRef Name="idOrden" />
+      <PropertyRef Name="idClase" />
+      <PropertyRef Name="idFilo" />
+      <PropertyRef Name="idReino" />
+      <PropertyRef Name="idDominio" />
+    </Key>
+    <Property Name="idGenero" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idFamilia" Type="int" Nullable="false" />
+    <Property Name="idOrden" Type="int" Nullable="false" />
+    <Property Name="idClase" Type="int" Nullable="false" />
+    <Property Name="idFilo" Type="int" Nullable="false" />
+    <Property Name="idReino" Type="int" Nullable="false" />
+    <Property Name="idDominio" Type="int" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MetodoDeSecuenciacion">
+    <Key>
+      <PropertyRef Name="idMetodoSec" />
+    </Key>
+    <Property Name="idMetodoSec" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Orden">
+    <Key>
+      <PropertyRef Name="idOrden" />
+      <PropertyRef Name="idClase" />
+      <PropertyRef Name="idFilo" />
+      <PropertyRef Name="idReino" />
+      <PropertyRef Name="idDominio" />
+    </Key>
+    <Property Name="idOrden" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idClase" Type="int" Nullable="false" />
+    <Property Name="idFilo" Type="int" Nullable="false" />
+    <Property Name="idReino" Type="int" Nullable="false" />
+    <Property Name="idDominio" Type="int" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Organela">
+    <Key>
+      <PropertyRef Name="idOrganela" />
+    </Key>
+    <Property Name="idOrganela" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Pais">
+    <Key>
+      <PropertyRef Name="idPais" />
+    </Key>
+    <Property Name="idPais" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="iso" Type="varchar" MaxLength="2" />
+    <Property Name="nombre" Type="varchar" MaxLength="80" />
+  </EntityType>
+  <EntityType Name="Publicacion">
+    <Key>
+      <PropertyRef Name="idPublicacion" />
+    </Key>
+    <Property Name="idPublicacion" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tituloPublicacion" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="fechaPub" Type="date" Nullable="false" />
+    <Property Name="idRevistaCientif" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6005: Actualmente, no se admite el tipo de datos 'hierarchyid' para la versión de Entity Framework de destino; se excluyó la columna 'path_locator' de la tabla 'bd_genetica.dbo.Publicacion_Archivo'.
+advertencia 6002: La tabla o vista 'bd_genetica.dbo.Publicacion_Archivo' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="Publicacion_Archivo">
+    <Key>
+      <PropertyRef Name="idPublicacion" />
+    </Key>
+    <Property Name="idPublicacion" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6005: Actualmente, no se admite el tipo de datos 'hierarchyid' para la versión de Entity Framework de destino; se excluyó la columna 'path_locator' de la tabla 'bd_genetica.dbo.PublicacionArchivos_FT'.
+advertencia 6005: Actualmente, no se admite el tipo de datos 'hierarchyid' para la versión de Entity Framework de destino; se excluyó la columna 'parent_path_locator' de la tabla 'bd_genetica.dbo.PublicacionArchivos_FT'.
+advertencia 6031: Se excluyó la columna 'path_locator' de la tabla o vista 'bd_genetica.dbo.PublicacionArchivos_FT', y es una columna de clave.  La tabla o vista se ha excluido.  Corrija la entidad en el archivo de esquema y quite sus comentarios.
+        <EntityType Name="PublicacionArchivos_FT">
+          <Property Name="stream_id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="file_stream" Type="varbinary(max)" />
+          <Property Name="name" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="file_type" Type="nvarchar" MaxLength="255" StoreGeneratedPattern="Computed" />
+          <Property Name="cached_file_size" Type="bigint" StoreGeneratedPattern="Computed" />
+          <Property Name="creation_time" Type="datetimeoffset" Precision="7" Nullable="false" />
+          <Property Name="last_write_time" Type="datetimeoffset" Precision="7" Nullable="false" />
+          <Property Name="last_access_time" Type="datetimeoffset" Precision="7" />
+          <Property Name="is_directory" Type="bit" Nullable="false" />
+          <Property Name="is_offline" Type="bit" Nullable="false" />
+          <Property Name="is_hidden" Type="bit" Nullable="false" />
+          <Property Name="is_readonly" Type="bit" Nullable="false" />
+          <Property Name="is_archive" Type="bit" Nullable="false" />
+          <Property Name="is_system" Type="bit" Nullable="false" />
+          <Property Name="is_temporary" Type="bit" Nullable="false" />
+        </EntityType>-->
+  <EntityType Name="Reino">
+    <Key>
+      <PropertyRef Name="idReino" />
+      <PropertyRef Name="idDominio" />
+    </Key>
+    <Property Name="idReino" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idDominio" Type="int" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Revista_Cientifica">
+    <Key>
+      <PropertyRef Name="idRevistaCientif" />
+    </Key>
+    <Property Name="idRevistaCientif" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombreRevista" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="idPais" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Secuencia_Autor">
+    <Key>
+      <PropertyRef Name="idSecNucleot" />
+      <PropertyRef Name="idAutor" />
+    </Key>
+    <Property Name="idSecNucleot" Type="int" Nullable="false" />
+    <Property Name="idAutor" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Secuencia_Gen">
+    <Key>
+      <PropertyRef Name="idGen" />
+      <PropertyRef Name="idSecNucleot" />
+    </Key>
+    <Property Name="idGen" Type="int" Nullable="false" />
+    <Property Name="idSecNucleot" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Secuencia_Gen_Potencial">
+    <Key>
+      <PropertyRef Name="idGen" />
+      <PropertyRef Name="idSecNucleot" />
+    </Key>
+    <Property Name="idGen" Type="int" Nullable="false" />
+    <Property Name="idSecNucleot" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Secuencia_Publicacion">
+    <Key>
+      <PropertyRef Name="idSecNucleot" />
+      <PropertyRef Name="idPublicacion" />
+    </Key>
+    <Property Name="idSecNucleot" Type="int" Nullable="false" />
+    <Property Name="idPublicacion" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SecuenciaDeNucleotidos">
+    <Key>
+      <PropertyRef Name="idSecNucleot" />
+    </Key>
+    <Property Name="idSecNucleot" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="secuencia" Type="varchar(max)" Nullable="false" />
+    <Property Name="fechaRegistro" Type="date" Nullable="false" />
+    <Property Name="idMetodoSec" Type="int" Nullable="false" />
+    <Property Name="anotaciones" Type="varchar" MaxLength="300" />
+    <Property Name="idOrganela" Type="int" Nullable="false" />
+    <Property Name="nroCromosoma" Type="int" />
+    <Property Name="idConformacion" Type="int" Nullable="false" />
+    <Property Name="idEspecie" Type="int" Nullable="false" />
+    <Property Name="idGenero" Type="int" Nullable="false" />
+    <Property Name="idFamilia" Type="int" Nullable="false" />
+    <Property Name="idOrden" Type="int" Nullable="false" />
+    <Property Name="idClase" Type="int" Nullable="false" />
+    <Property Name="idFilo" Type="int" Nullable="false" />
+    <Property Name="idReino" Type="int" Nullable="false" />
+    <Property Name="idDominio" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Titulo">
+    <Key>
+      <PropertyRef Name="idTitulo" />
+    </Key>
+    <Property Name="idTitulo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="titulo" Type="varchar" MaxLength="40" />
+  </EntityType>
+  <EntityType Name="VincularArchivos">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OtherEntityID" Type="int" Nullable="false" />
+    <Property Name="DocumentID" Type="varchar" MaxLength="4000" />
+    <Property Name="InsertDT" Type="datetime" Nullable="false" />
+    <Property Name="UpdateDT" Type="datetime" />
+    <Property Name="InsertedBy" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'bd_genetica.dbo.VistaPublicacionArchivos_FT' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="VistaPublicacionArchivos_FT">
+    <Key>
+      <PropertyRef Name="stream_id" />
+      <PropertyRef Name="name" />
+      <PropertyRef Name="creation_time" />
+      <PropertyRef Name="last_write_time" />
+      <PropertyRef Name="is_directory" />
+      <PropertyRef Name="is_offline" />
+      <PropertyRef Name="is_hidden" />
+      <PropertyRef Name="is_readonly" />
+      <PropertyRef Name="is_archive" />
+      <PropertyRef Name="is_system" />
+      <PropertyRef Name="is_temporary" />
+    </Key>
+    <Property Name="stream_id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="file_stream" Type="varbinary(max)" />
+    <Property Name="name" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="path_locator" Type="varchar" MaxLength="4000" />
+    <Property Name="parent_path_locator" Type="varchar" MaxLength="4000" />
+    <Property Name="file_type" Type="nvarchar" MaxLength="255" />
+    <Property Name="cached_file_size" Type="bigint" />
+    <Property Name="creation_time" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="last_write_time" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="last_access_time" Type="datetimeoffset" Precision="7" />
+    <Property Name="is_directory" Type="bit" Nullable="false" />
+    <Property Name="is_offline" Type="bit" Nullable="false" />
+    <Property Name="is_hidden" Type="bit" Nullable="false" />
+    <Property Name="is_readonly" Type="bit" Nullable="false" />
+    <Property Name="is_archive" Type="bit" Nullable="false" />
+    <Property Name="is_system" Type="bit" Nullable="false" />
+    <Property Name="is_temporary" Type="bit" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+error 6004: Una relación hace referencia a la tabla 'bd_genetica.dbo.PublicacionArchivos_FT', pero no se encuentra la tabla.
+error 6004: Una relación hace referencia a la tabla 'bd_genetica.dbo.PublicacionArchivos_FT', pero no se encuentra la tabla.
+        <Association Name="FK__Publicaci__paren__1BC821DD" />-->
+  <!--Errores durante la generación:
+error 6004: Una relación hace referencia a la tabla 'bd_genetica.dbo.PublicacionArchivos_FT', pero no se encuentra la tabla.
+        <Association Name="FK_archivo_ft" />-->
+  <Association Name="FK_Autor">
+    <End Role="Autor" Type="Self.Autor" Multiplicity="1" />
+    <End Role="Autor_Publicacion" Type="Self.Autor_Publicacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Autor">
+        <PropertyRef Name="idAutor" />
+      </Principal>
+      <Dependent Role="Autor_Publicacion">
+        <PropertyRef Name="idAutor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Fk_Autor_Titulo">
+    <End Role="Titulo" Type="Self.Titulo" Multiplicity="0..1" />
+    <End Role="Autor" Type="Self.Autor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Titulo">
+        <PropertyRef Name="idTitulo" />
+      </Principal>
+      <Dependent Role="Autor">
+        <PropertyRef Name="idMaxTitulo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Clase_Filo">
+    <End Role="Filo" Type="Self.Filo" Multiplicity="1" />
+    <End Role="Clase" Type="Self.Clase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Filo">
+        <PropertyRef Name="idFilo" />
+        <PropertyRef Name="idReino" />
+        <PropertyRef Name="idDominio" />
+      </Principal>
+      <Dependent Role="Clase">
+        <PropertyRef Name="idFilo" />
+        <PropertyRef Name="idReino" />
+        <PropertyRef Name="idDominio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Especie_Genero">
+    <End Role="Genero" Type="Self.Genero" Multiplicity="1" />
+    <End Role="Especie" Type="Self.Especie" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Genero">
+        <PropertyRef Name="idGenero" />
+        <PropertyRef Name="idFamilia" />
+        <PropertyRef Name="idOrden" />
+        <PropertyRef Name="idClase" />
+        <PropertyRef Name="idFilo" />
+        <PropertyRef Name="idReino" />
+        <PropertyRef Name="idDominio" />
+      </Principal>
+      <Dependent Role="Especie">
+        <PropertyRef Name="idGenero" />
+        <PropertyRef Name="idFamilia" />
+        <PropertyRef Name="idOrden" />
+        <PropertyRef Name="idClase" />
+        <PropertyRef Name="idFilo" />
+        <PropertyRef Name="idReino" />
+        <PropertyRef Name="idDominio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Familia_Orden">
+    <End Role="Orden" Type="Self.Orden" Multiplicity="1" />
+    <End Role="Familia" Type="Self.Familia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orden">
+        <PropertyRef Name="idOrden" />
+        <PropertyRef Name="idClase" />
+        <PropertyRef Name="idFilo" />
+        <PropertyRef Name="idReino" />
+        <PropertyRef Name="idDominio" />
+      </Principal>
+      <Dependent Role="Familia">
+        <PropertyRef Name="idOrden" />
+        <PropertyRef Name="idClase" />
+        <PropertyRef Name="idFilo" />
+        <PropertyRef Name="idReino" />
+        <PropertyRef Name="idDominio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Filo_Reino">
+    <End Role="Reino" Type="Self.Reino" Multiplicity="1" />
+    <End Role="Filo" Type="Self.Filo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Reino">
+        <PropertyRef Name="idReino" />
+        <PropertyRef Name="idDominio" />
+      </Principal>
+      <Dependent Role="Filo">
+        <PropertyRef Name="idReino" />
+        <PropertyRef Name="idDominio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Genero_FamiliaFOREIGN">
+    <End Role="Familia" Type="Self.Familia" Multiplicity="1" />
+    <End Role="Genero" Type="Self.Genero" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Familia">
+        <PropertyRef Name="idFamilia" />
+        <PropertyRef Name="idOrden" />
+        <PropertyRef Name="idClase" />
+        <PropertyRef Name="idFilo" />
+        <PropertyRef Name="idReino" />
+        <PropertyRef Name="idDominio" />
+      </Principal>
+      <Dependent Role="Genero">
+        <PropertyRef Name="idFamilia" />
+        <PropertyRef Name="idOrden" />
+        <PropertyRef Name="idClase" />
+        <PropertyRef Name="idFilo" />
+        <PropertyRef Name="idReino" />
+        <PropertyRef Name="idDominio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Orden_Clase">
+    <End Role="Clase" Type="Self.Clase" Multiplicity="1" />
+    <End Role="Orden" Type="Self.Orden" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clase">
+        <PropertyRef Name="idClase" />
+        <PropertyRef Name="idFilo" />
+        <PropertyRef Name="idReino" />
+        <PropertyRef Name="idDominio" />
+      </Principal>
+      <Dependent Role="Orden">
+        <PropertyRef Name="idClase" />
+        <PropertyRef Name="idFilo" />
+        <PropertyRef Name="idReino" />
+        <PropertyRef Name="idDominio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Publicacion">
+    <End Role="Publicacion" Type="Self.Publicacion" Multiplicity="1" />
+    <End Role="Autor_Publicacion" Type="Self.Autor_Publicacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Publicacion">
+        <PropertyRef Name="idPublicacion" />
+      </Principal>
+      <Dependent Role="Autor_Publicacion">
+        <PropertyRef Name="idPublicacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_publicacion_ft">
+    <End Role="Publicacion" Type="Self.Publicacion" Multiplicity="1" />
+    <End Role="Publicacion_Archivo" Type="Self.Publicacion_Archivo" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Publicacion">
+        <PropertyRef Name="idPublicacion" />
+      </Principal>
+      <Dependent Role="Publicacion_Archivo">
+        <PropertyRef Name="idPublicacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Publicacion_Revista">
+    <End Role="Revista_Cientifica" Type="Self.Revista_Cientifica" Multiplicity="1" />
+    <End Role="Publicacion" Type="Self.Publicacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Revista_Cientifica">
+        <PropertyRef Name="idRevistaCientif" />
+      </Principal>
+      <Dependent Role="Publicacion">
+        <PropertyRef Name="idRevistaCientif" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Reino_Dominio">
+    <End Role="Dominio" Type="Self.Dominio" Multiplicity="1" />
+    <End Role="Reino" Type="Self.Reino" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dominio">
+        <PropertyRef Name="idDominio" />
+      </Principal>
+      <Dependent Role="Reino">
+        <PropertyRef Name="idDominio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Revista_Pais">
+    <End Role="Pais" Type="Self.Pais" Multiplicity="1" />
+    <End Role="Revista_Cientifica" Type="Self.Revista_Cientifica" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pais">
+        <PropertyRef Name="idPais" />
+      </Principal>
+      <Dependent Role="Revista_Cientifica">
+        <PropertyRef Name="idPais" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SecuenciaAutor_Autor">
+    <End Role="Autor" Type="Self.Autor" Multiplicity="1" />
+    <End Role="Secuencia_Autor" Type="Self.Secuencia_Autor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Autor">
+        <PropertyRef Name="idAutor" />
+      </Principal>
+      <Dependent Role="Secuencia_Autor">
+        <PropertyRef Name="idAutor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SecuenciaAutor_Secuencia">
+    <End Role="SecuenciaDeNucleotidos" Type="Self.SecuenciaDeNucleotidos" Multiplicity="1" />
+    <End Role="Secuencia_Autor" Type="Self.Secuencia_Autor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SecuenciaDeNucleotidos">
+        <PropertyRef Name="idSecNucleot" />
+      </Principal>
+      <Dependent Role="Secuencia_Autor">
+        <PropertyRef Name="idSecNucleot" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SecuenciaGen_Gen">
+    <End Role="Gen" Type="Self.Gen" Multiplicity="1" />
+    <End Role="Secuencia_Gen" Type="Self.Secuencia_Gen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Gen">
+        <PropertyRef Name="idGen" />
+      </Principal>
+      <Dependent Role="Secuencia_Gen">
+        <PropertyRef Name="idGen" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SecuenciaGen_SecNucl">
+    <End Role="SecuenciaDeNucleotidos" Type="Self.SecuenciaDeNucleotidos" Multiplicity="1" />
+    <End Role="Secuencia_Gen" Type="Self.Secuencia_Gen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SecuenciaDeNucleotidos">
+        <PropertyRef Name="idSecNucleot" />
+      </Principal>
+      <Dependent Role="Secuencia_Gen">
+        <PropertyRef Name="idSecNucleot" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SecuenciaGenPotencial_Gen">
+    <End Role="Gen" Type="Self.Gen" Multiplicity="1" />
+    <End Role="Secuencia_Gen_Potencial" Type="Self.Secuencia_Gen_Potencial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Gen">
+        <PropertyRef Name="idGen" />
+      </Principal>
+      <Dependent Role="Secuencia_Gen_Potencial">
+        <PropertyRef Name="idGen" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SecuenciaGenPotencial_SecNucl">
+    <End Role="SecuenciaDeNucleotidos" Type="Self.SecuenciaDeNucleotidos" Multiplicity="1" />
+    <End Role="Secuencia_Gen_Potencial" Type="Self.Secuencia_Gen_Potencial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SecuenciaDeNucleotidos">
+        <PropertyRef Name="idSecNucleot" />
+      </Principal>
+      <Dependent Role="Secuencia_Gen_Potencial">
+        <PropertyRef Name="idSecNucleot" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_SecuenciaNucl_Conformacion">
+    <End Role="Conformacion" Type="Self.Conformacion" Multiplicity="1" />
+    <End Role="SecuenciaDeNucleotidos" Type="Self.SecuenciaDeNucleotidos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Conformacion">
+        <PropertyRef Name="idConformacion" />
+      </Principal>
+      <Dependent Role="SecuenciaDeNucleotidos">
+        <PropertyRef Name="idConformacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_SecuenciaNucl_Especie">
+    <End Role="Especie" Type="Self.Especie" Multiplicity="1" />
+    <End Role="SecuenciaDeNucleotidos" Type="Self.SecuenciaDeNucleotidos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Especie">
+        <PropertyRef Name="idEspecie" />
+        <PropertyRef Name="idGenero" />
+        <PropertyRef Name="idFamilia" />
+        <PropertyRef Name="idOrden" />
+        <PropertyRef Name="idClase" />
+        <PropertyRef Name="idFilo" />
+        <PropertyRef Name="idReino" />
+        <PropertyRef Name="idDominio" />
+      </Principal>
+      <Dependent Role="SecuenciaDeNucleotidos">
+        <PropertyRef Name="idEspecie" />
+        <PropertyRef Name="idGenero" />
+        <PropertyRef Name="idFamilia" />
+        <PropertyRef Name="idOrden" />
+        <PropertyRef Name="idClase" />
+        <PropertyRef Name="idFilo" />
+        <PropertyRef Name="idReino" />
+        <PropertyRef Name="idDominio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_SecuenciaNucl_MetodoSec">
+    <End Role="MetodoDeSecuenciacion" Type="Self.MetodoDeSecuenciacion" Multiplicity="1" />
+    <End Role="SecuenciaDeNucleotidos" Type="Self.SecuenciaDeNucleotidos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MetodoDeSecuenciacion">
+        <PropertyRef Name="idMetodoSec" />
+      </Principal>
+      <Dependent Role="SecuenciaDeNucleotidos">
+        <PropertyRef Name="idMetodoSec" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_SecuenciaNucl_Organela">
+    <End Role="Organela" Type="Self.Organela" Multiplicity="1" />
+    <End Role="SecuenciaDeNucleotidos" Type="Self.SecuenciaDeNucleotidos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Organela">
+        <PropertyRef Name="idOrganela" />
+      </Principal>
+      <Dependent Role="SecuenciaDeNucleotidos">
+        <PropertyRef Name="idOrganela" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SecuenciaPublicacion_Publicacion">
+    <End Role="Publicacion" Type="Self.Publicacion" Multiplicity="1" />
+    <End Role="Secuencia_Publicacion" Type="Self.Secuencia_Publicacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Publicacion">
+        <PropertyRef Name="idPublicacion" />
+      </Principal>
+      <Dependent Role="Secuencia_Publicacion">
+        <PropertyRef Name="idPublicacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SecuenciaPublicacion_Secuencia">
+    <End Role="SecuenciaDeNucleotidos" Type="Self.SecuenciaDeNucleotidos" Multiplicity="1" />
+    <End Role="Secuencia_Publicacion" Type="Self.Secuencia_Publicacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SecuenciaDeNucleotidos">
+        <PropertyRef Name="idSecNucleot" />
+      </Principal>
+      <Dependent Role="Secuencia_Publicacion">
+        <PropertyRef Name="idSecNucleot" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="bd_geneticaModelStoreContainer">
+    <EntitySet Name="Autor" EntityType="Self.Autor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Autor_Publicacion" EntityType="Self.Autor_Publicacion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Clase" EntityType="Self.Clase" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Conformacion" EntityType="Self.Conformacion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dominio" EntityType="Self.Dominio" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Especie" EntityType="Self.Especie" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Familia" EntityType="Self.Familia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Filo" EntityType="Self.Filo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Gen" EntityType="Self.Gen" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Genero" EntityType="Self.Genero" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MetodoDeSecuenciacion" EntityType="Self.MetodoDeSecuenciacion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Orden" EntityType="Self.Orden" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Organela" EntityType="Self.Organela" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pais" EntityType="Self.Pais" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Publicacion" EntityType="Self.Publicacion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Reino" EntityType="Self.Reino" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Revista_Cientifica" EntityType="Self.Revista_Cientifica" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Secuencia_Autor" EntityType="Self.Secuencia_Autor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Secuencia_Gen" EntityType="Self.Secuencia_Gen" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Secuencia_Gen_Potencial" EntityType="Self.Secuencia_Gen_Potencial" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Secuencia_Publicacion" EntityType="Self.Secuencia_Publicacion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SecuenciaDeNucleotidos" EntityType="Self.SecuenciaDeNucleotidos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Titulo" EntityType="Self.Titulo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VincularArchivos" EntityType="Self.VincularArchivos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Publicacion_Archivo" EntityType="Self.Publicacion_Archivo" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Publicacion_Archivo].[idPublicacion] AS [idPublicacion]
+    FROM [dbo].[Publicacion_Archivo] AS [Publicacion_Archivo]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VistaPublicacionArchivos_FT" EntityType="Self.VistaPublicacionArchivos_FT" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [VistaPublicacionArchivos_FT].[stream_id] AS [stream_id], 
+    [VistaPublicacionArchivos_FT].[file_stream] AS [file_stream], 
+    [VistaPublicacionArchivos_FT].[name] AS [name], 
+    [VistaPublicacionArchivos_FT].[path_locator] AS [path_locator], 
+    [VistaPublicacionArchivos_FT].[parent_path_locator] AS [parent_path_locator], 
+    [VistaPublicacionArchivos_FT].[file_type] AS [file_type], 
+    [VistaPublicacionArchivos_FT].[cached_file_size] AS [cached_file_size], 
+    [VistaPublicacionArchivos_FT].[creation_time] AS [creation_time], 
+    [VistaPublicacionArchivos_FT].[last_write_time] AS [last_write_time], 
+    [VistaPublicacionArchivos_FT].[last_access_time] AS [last_access_time], 
+    [VistaPublicacionArchivos_FT].[is_directory] AS [is_directory], 
+    [VistaPublicacionArchivos_FT].[is_offline] AS [is_offline], 
+    [VistaPublicacionArchivos_FT].[is_hidden] AS [is_hidden], 
+    [VistaPublicacionArchivos_FT].[is_readonly] AS [is_readonly], 
+    [VistaPublicacionArchivos_FT].[is_archive] AS [is_archive], 
+    [VistaPublicacionArchivos_FT].[is_system] AS [is_system], 
+    [VistaPublicacionArchivos_FT].[is_temporary] AS [is_temporary]
+    FROM [dbo].[VistaPublicacionArchivos_FT] AS [VistaPublicacionArchivos_FT]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_Autor" Association="Self.FK_Autor">
+      <End Role="Autor" EntitySet="Autor" />
+      <End Role="Autor_Publicacion" EntitySet="Autor_Publicacion" />
+    </AssociationSet>
+    <AssociationSet Name="Fk_Autor_Titulo" Association="Self.Fk_Autor_Titulo">
+      <End Role="Titulo" EntitySet="Titulo" />
+      <End Role="Autor" EntitySet="Autor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Clase_Filo" Association="Self.FK_Clase_Filo">
+      <End Role="Filo" EntitySet="Filo" />
+      <End Role="Clase" EntitySet="Clase" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Especie_Genero" Association="Self.FK_Especie_Genero">
+      <End Role="Genero" EntitySet="Genero" />
+      <End Role="Especie" EntitySet="Especie" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Familia_Orden" Association="Self.FK_Familia_Orden">
+      <End Role="Orden" EntitySet="Orden" />
+      <End Role="Familia" EntitySet="Familia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Filo_Reino" Association="Self.FK_Filo_Reino">
+      <End Role="Reino" EntitySet="Reino" />
+      <End Role="Filo" EntitySet="Filo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Genero_FamiliaFOREIGN" Association="Self.FK_Genero_FamiliaFOREIGN">
+      <End Role="Familia" EntitySet="Familia" />
+      <End Role="Genero" EntitySet="Genero" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Orden_Clase" Association="Self.FK_Orden_Clase">
+      <End Role="Clase" EntitySet="Clase" />
+      <End Role="Orden" EntitySet="Orden" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Publicacion" Association="Self.FK_Publicacion">
+      <End Role="Publicacion" EntitySet="Publicacion" />
+      <End Role="Autor_Publicacion" EntitySet="Autor_Publicacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_publicacion_ft" Association="Self.FK_publicacion_ft">
+      <End Role="Publicacion" EntitySet="Publicacion" />
+      <End Role="Publicacion_Archivo" EntitySet="Publicacion_Archivo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Publicacion_Revista" Association="Self.FK_Publicacion_Revista">
+      <End Role="Revista_Cientifica" EntitySet="Revista_Cientifica" />
+      <End Role="Publicacion" EntitySet="Publicacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Reino_Dominio" Association="Self.FK_Reino_Dominio">
+      <End Role="Dominio" EntitySet="Dominio" />
+      <End Role="Reino" EntitySet="Reino" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Revista_Pais" Association="Self.FK_Revista_Pais">
+      <End Role="Pais" EntitySet="Pais" />
+      <End Role="Revista_Cientifica" EntitySet="Revista_Cientifica" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SecuenciaAutor_Autor" Association="Self.FK_SecuenciaAutor_Autor">
+      <End Role="Autor" EntitySet="Autor" />
+      <End Role="Secuencia_Autor" EntitySet="Secuencia_Autor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SecuenciaAutor_Secuencia" Association="Self.FK_SecuenciaAutor_Secuencia">
+      <End Role="SecuenciaDeNucleotidos" EntitySet="SecuenciaDeNucleotidos" />
+      <End Role="Secuencia_Autor" EntitySet="Secuencia_Autor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SecuenciaGen_Gen" Association="Self.FK_SecuenciaGen_Gen">
+      <End Role="Gen" EntitySet="Gen" />
+      <End Role="Secuencia_Gen" EntitySet="Secuencia_Gen" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SecuenciaGen_SecNucl" Association="Self.FK_SecuenciaGen_SecNucl">
+      <End Role="SecuenciaDeNucleotidos" EntitySet="SecuenciaDeNucleotidos" />
+      <End Role="Secuencia_Gen" EntitySet="Secuencia_Gen" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SecuenciaGenPotencial_Gen" Association="Self.FK_SecuenciaGenPotencial_Gen">
+      <End Role="Gen" EntitySet="Gen" />
+      <End Role="Secuencia_Gen_Potencial" EntitySet="Secuencia_Gen_Potencial" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SecuenciaGenPotencial_SecNucl" Association="Self.FK_SecuenciaGenPotencial_SecNucl">
+      <End Role="SecuenciaDeNucleotidos" EntitySet="SecuenciaDeNucleotidos" />
+      <End Role="Secuencia_Gen_Potencial" EntitySet="Secuencia_Gen_Potencial" />
+    </AssociationSet>
+    <AssociationSet Name="fk_SecuenciaNucl_Conformacion" Association="Self.fk_SecuenciaNucl_Conformacion">
+      <End Role="Conformacion" EntitySet="Conformacion" />
+      <End Role="SecuenciaDeNucleotidos" EntitySet="SecuenciaDeNucleotidos" />
+    </AssociationSet>
+    <AssociationSet Name="fk_SecuenciaNucl_Especie" Association="Self.fk_SecuenciaNucl_Especie">
+      <End Role="Especie" EntitySet="Especie" />
+      <End Role="SecuenciaDeNucleotidos" EntitySet="SecuenciaDeNucleotidos" />
+    </AssociationSet>
+    <AssociationSet Name="fk_SecuenciaNucl_MetodoSec" Association="Self.fk_SecuenciaNucl_MetodoSec">
+      <End Role="MetodoDeSecuenciacion" EntitySet="MetodoDeSecuenciacion" />
+      <End Role="SecuenciaDeNucleotidos" EntitySet="SecuenciaDeNucleotidos" />
+    </AssociationSet>
+    <AssociationSet Name="fk_SecuenciaNucl_Organela" Association="Self.fk_SecuenciaNucl_Organela">
+      <End Role="Organela" EntitySet="Organela" />
+      <End Role="SecuenciaDeNucleotidos" EntitySet="SecuenciaDeNucleotidos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SecuenciaPublicacion_Publicacion" Association="Self.FK_SecuenciaPublicacion_Publicacion">
+      <End Role="Publicacion" EntitySet="Publicacion" />
+      <End Role="Secuencia_Publicacion" EntitySet="Secuencia_Publicacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SecuenciaPublicacion_Secuencia" Association="Self.FK_SecuenciaPublicacion_Secuencia">
+      <End Role="SecuenciaDeNucleotidos" EntitySet="SecuenciaDeNucleotidos" />
+      <End Role="Secuencia_Publicacion" EntitySet="Secuencia_Publicacion" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

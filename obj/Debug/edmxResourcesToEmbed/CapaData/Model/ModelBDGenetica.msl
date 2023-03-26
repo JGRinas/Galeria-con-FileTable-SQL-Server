@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="bd_geneticaModelStoreContainer" CdmEntityContainer="bd_geneticaEntities">
+    <EntitySetMapping Name="Autor">
+      <EntityTypeMapping TypeName="bd_geneticaModel.Autor">
+        <MappingFragment StoreEntitySet="Autor">
+          <ScalarProperty Name="idAutor" ColumnName="idAutor" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellido" ColumnName="apellido" />
+          <ScalarProperty Name="dni" ColumnName="dni" />
+          <ScalarProperty Name="descrEspecialidad" ColumnName="descrEspecialidad" />
+          <ScalarProperty Name="idMaxTitulo" ColumnName="idMaxTitulo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clase">
+      <EntityTypeMapping TypeName="bd_geneticaModel.Clase">
+        <MappingFragment StoreEntitySet="Clase">
+          <ScalarProperty Name="idClase" ColumnName="idClase" />
+          <ScalarProperty Name="idFilo" ColumnName="idFilo" />
+          <ScalarProperty Name="idReino" ColumnName="idReino" />
+          <ScalarProperty Name="idDominio" ColumnName="idDominio" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Conformacion">
+      <EntityTypeMapping TypeName="bd_geneticaModel.Conformacion">
+        <MappingFragment StoreEntitySet="Conformacion">
+          <ScalarProperty Name="idConformacion" ColumnName="idConformacion" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dominio">
+      <EntityTypeMapping TypeName="bd_geneticaModel.Dominio">
+        <MappingFragment StoreEntitySet="Dominio">
+          <ScalarProperty Name="idDominio" ColumnName="idDominio" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Especie">
+      <EntityTypeMapping TypeName="bd_geneticaModel.Especie">
+        <MappingFragment StoreEntitySet="Especie">
+          <ScalarProperty Name="idEspecie" ColumnName="idEspecie" />
+          <ScalarProperty Name="idGenero" ColumnName="idGenero" />
+          <ScalarProperty Name="idFamilia" ColumnName="idFamilia" />
+          <ScalarProperty Name="idOrden" ColumnName="idOrden" />
+          <ScalarProperty Name="idClase" ColumnName="idClase" />
+          <ScalarProperty Name="idFilo" ColumnName="idFilo" />
+          <ScalarProperty Name="idReino" ColumnName="idReino" />
+          <ScalarProperty Name="idDominio" ColumnName="idDominio" />
+          <ScalarProperty Name="epitetoEspecifico" ColumnName="epitetoEspecifico" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Familia">
+      <EntityTypeMapping TypeName="bd_geneticaModel.Familia">
+        <MappingFragment StoreEntitySet="Familia">
+          <ScalarProperty Name="idFamilia" ColumnName="idFamilia" />
+          <ScalarProperty Name="idOrden" ColumnName="idOrden" />
+          <ScalarProperty Name="idClase" ColumnName="idClase" />
+          <ScalarProperty Name="idFilo" ColumnName="idFilo" />
+          <ScalarProperty Name="idReino" ColumnName="idReino" />
+          <ScalarProperty Name="idDominio" ColumnName="idDominio" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Filo">
+      <EntityTypeMapping TypeName="bd_geneticaModel.Filo">
+        <MappingFragment StoreEntitySet="Filo">
+          <ScalarProperty Name="idFilo" ColumnName="idFilo" />
+          <ScalarProperty Name="idReino" ColumnName="idReino" />
+          <ScalarProperty Name="idDominio" ColumnName="idDominio" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Gen">
+      <EntityTypeMapping TypeName="bd_geneticaModel.Gen">
+        <MappingFragment StoreEntitySet="Gen">
+          <ScalarProperty Name="idGen" ColumnName="idGen" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="secuencia" ColumnName="secuencia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Genero">
+      <EntityTypeMapping TypeName="bd_geneticaModel.Genero">
+        <MappingFragment StoreEntitySet="Genero">
+          <ScalarProperty Name="idGenero" ColumnName="idGenero" />
+          <ScalarProperty Name="idFamilia" ColumnName="idFamilia" />
+          <ScalarProperty Name="idOrden" ColumnName="idOrden" />
+          <ScalarProperty Name="idClase" ColumnName="idClase" />
+          <ScalarProperty Name="idFilo" ColumnName="idFilo" />
+          <ScalarProperty Name="idReino" ColumnName="idReino" />
+          <ScalarProperty Name="idDominio" ColumnName="idDominio" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MetodoDeSecuenciacion">
+      <EntityTypeMapping TypeName="bd_geneticaModel.MetodoDeSecuenciacion">
+        <MappingFragment StoreEntitySet="MetodoDeSecuenciacion">
+          <ScalarProperty Name="idMetodoSec" ColumnName="idMetodoSec" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orden">
+      <EntityTypeMapping TypeName="bd_geneticaModel.Orden">
+        <MappingFragment StoreEntitySet="Orden">
+          <ScalarProperty Name="idOrden" ColumnName="idOrden" />
+          <ScalarProperty Name="idClase" ColumnName="idClase" />
+          <ScalarProperty Name="idFilo" ColumnName="idFilo" />
+          <ScalarProperty Name="idReino" ColumnName="idReino" />
+          <ScalarProperty Name="idDominio" ColumnName="idDominio" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Organela">
+      <EntityTypeMapping TypeName="bd_geneticaModel.Organela">
+        <MappingFragment StoreEntitySet="Organela">
+          <ScalarProperty Name="idOrganela" ColumnName="idOrganela" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pais">
+      <EntityTypeMapping TypeName="bd_geneticaModel.Pais">
+        <MappingFragment StoreEntitySet="Pais">
+          <ScalarProperty Name="idPais" ColumnName="idPais" />
+          <ScalarProperty Name="iso" ColumnName="iso" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Publicacion">
+      <EntityTypeMapping TypeName="bd_geneticaModel.Publicacion">
+        <MappingFragment StoreEntitySet="Publicacion">
+          <ScalarProperty Name="idPublicacion" ColumnName="idPublicacion" />
+          <ScalarProperty Name="tituloPublicacion" ColumnName="tituloPublicacion" />
+          <ScalarProperty Name="fechaPub" ColumnName="fechaPub" />
+          <ScalarProperty Name="idRevistaCientif" ColumnName="idRevistaCientif" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reino">
+      <EntityTypeMapping TypeName="bd_geneticaModel.Reino">
+        <MappingFragment StoreEntitySet="Reino">
+          <ScalarProperty Name="idReino" ColumnName="idReino" />
+          <ScalarProperty Name="idDominio" ColumnName="idDominio" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Revista_Cientifica">
+      <EntityTypeMapping TypeName="bd_geneticaModel.Revista_Cientifica">
+        <MappingFragment StoreEntitySet="Revista_Cientifica">
+          <ScalarProperty Name="idRevistaCientif" ColumnName="idRevistaCientif" />
+          <ScalarProperty Name="nombreRevista" ColumnName="nombreRevista" />
+          <ScalarProperty Name="idPais" ColumnName="idPais" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SecuenciaDeNucleotidos">
+      <EntityTypeMapping TypeName="bd_geneticaModel.SecuenciaDeNucleotidos">
+        <MappingFragment StoreEntitySet="SecuenciaDeNucleotidos">
+          <ScalarProperty Name="idSecNucleot" ColumnName="idSecNucleot" />
+          <ScalarProperty Name="secuencia" ColumnName="secuencia" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="idMetodoSec" ColumnName="idMetodoSec" />
+          <ScalarProperty Name="anotaciones" ColumnName="anotaciones" />
+          <ScalarProperty Name="idOrganela" ColumnName="idOrganela" />
+          <ScalarProperty Name="nroCromosoma" ColumnName="nroCromosoma" />
+          <ScalarProperty Name="idConformacion" ColumnName="idConformacion" />
+          <ScalarProperty Name="idEspecie" ColumnName="idEspecie" />
+          <ScalarProperty Name="idGenero" ColumnName="idGenero" />
+          <ScalarProperty Name="idFamilia" ColumnName="idFamilia" />
+          <ScalarProperty Name="idOrden" ColumnName="idOrden" />
+          <ScalarProperty Name="idClase" ColumnName="idClase" />
+          <ScalarProperty Name="idFilo" ColumnName="idFilo" />
+          <ScalarProperty Name="idReino" ColumnName="idReino" />
+          <ScalarProperty Name="idDominio" ColumnName="idDominio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Titulo">
+      <EntityTypeMapping TypeName="bd_geneticaModel.Titulo">
+        <MappingFragment StoreEntitySet="Titulo">
+          <ScalarProperty Name="idTitulo" ColumnName="idTitulo" />
+          <ScalarProperty Name="titulo1" ColumnName="titulo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Publicacion_Archivo">
+      <EntityTypeMapping TypeName="bd_geneticaModel.Publicacion_Archivo">
+        <MappingFragment StoreEntitySet="Publicacion_Archivo">
+          <ScalarProperty Name="idPublicacion" ColumnName="idPublicacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="Autor_Publicacion" TypeName="bd_geneticaModel.Autor_Publicacion" StoreEntitySet="Autor_Publicacion">
+      <EndProperty Name="Autor">
+        <ScalarProperty Name="idAutor" ColumnName="idAutor" />
+      </EndProperty>
+      <EndProperty Name="Publicacion">
+        <ScalarProperty Name="idPublicacion" ColumnName="idPublicacion" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Secuencia_Autor" TypeName="bd_geneticaModel.Secuencia_Autor" StoreEntitySet="Secuencia_Autor">
+      <EndProperty Name="Autor">
+        <ScalarProperty Name="idAutor" ColumnName="idAutor" />
+      </EndProperty>
+      <EndProperty Name="SecuenciaDeNucleotidos">
+        <ScalarProperty Name="idSecNucleot" ColumnName="idSecNucleot" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Secuencia_Gen" TypeName="bd_geneticaModel.Secuencia_Gen" StoreEntitySet="Secuencia_Gen">
+      <EndProperty Name="Gen">
+        <ScalarProperty Name="idGen" ColumnName="idGen" />
+      </EndProperty>
+      <EndProperty Name="SecuenciaDeNucleotidos">
+        <ScalarProperty Name="idSecNucleot" ColumnName="idSecNucleot" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Secuencia_Gen_Potencial" TypeName="bd_geneticaModel.Secuencia_Gen_Potencial" StoreEntitySet="Secuencia_Gen_Potencial">
+      <EndProperty Name="Gen">
+        <ScalarProperty Name="idGen" ColumnName="idGen" />
+      </EndProperty>
+      <EndProperty Name="SecuenciaDeNucleotidos">
+        <ScalarProperty Name="idSecNucleot" ColumnName="idSecNucleot" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Secuencia_Publicacion" TypeName="bd_geneticaModel.Secuencia_Publicacion" StoreEntitySet="Secuencia_Publicacion">
+      <EndProperty Name="Publicacion">
+        <ScalarProperty Name="idPublicacion" ColumnName="idPublicacion" />
+      </EndProperty>
+      <EndProperty Name="SecuenciaDeNucleotidos">
+        <ScalarProperty Name="idSecNucleot" ColumnName="idSecNucleot" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>
